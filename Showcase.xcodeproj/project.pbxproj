@@ -20,6 +20,9 @@
 		56725ECC1C9F8820007AD89C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56725ECB1C9F8820007AD89C /* Constants.swift */; };
 		56725ECE1C9F8BC4007AD89C /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56725ECD1C9F8BC4007AD89C /* MaterialButton.swift */; };
 		56725ED01C9F8F47007AD89C /* MaterialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56725ECF1C9F8F47007AD89C /* MaterialField.swift */; };
+		56963EE11CA22FB20086E293 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56963EE01CA22FB20086E293 /* FeedVC.swift */; };
+		56963EE31CA2307D0086E293 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56963EE21CA2307D0086E293 /* PostCell.swift */; };
+		56C4E56F1CA8C4850064E826 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4E56E1CA8C4850064E826 /* Post.swift */; };
 		56E8D2261CA0CB360016A39F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E8D2231CA0CB360016A39F /* Bolts.framework */; };
 		56E8D2271CA0CB360016A39F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E8D2241CA0CB360016A39F /* FBSDKCoreKit.framework */; };
 		56E8D2281CA0CB360016A39F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56E8D2251CA0CB360016A39F /* FBSDKLoginKit.framework */; };
@@ -44,6 +47,9 @@
 		56725ECB1C9F8820007AD89C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		56725ECD1C9F8BC4007AD89C /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		56725ECF1C9F8F47007AD89C /* MaterialField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialField.swift; sourceTree = "<group>"; };
+		56963EE01CA22FB20086E293 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		56963EE21CA2307D0086E293 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		56C4E56E1CA8C4850064E826 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		56E8D2231CA0CB360016A39F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		56E8D2241CA0CB360016A39F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		56E8D2251CA0CB360016A39F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -103,8 +109,6 @@
 				56725EBE1C9F849B007AD89C /* View */,
 				56725EBC1C9F848D007AD89C /* Controller */,
 				56725EBF1C9F84A5007AD89C /* Resources */,
-				56725EAC1C9F846E007AD89C /* ViewController.swift */,
-				56725EAA1C9F846E007AD89C /* AppDelegate.swift */,
 				56725EAE1C9F846E007AD89C /* Main.storyboard */,
 				56725EB11C9F846E007AD89C /* Assets.xcassets */,
 				56725EB31C9F846E007AD89C /* LaunchScreen.storyboard */,
@@ -116,6 +120,8 @@
 		56725EBC1C9F848D007AD89C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				56725EAC1C9F846E007AD89C /* ViewController.swift */,
+				56963EE01CA22FB20086E293 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -123,6 +129,8 @@
 		56725EBD1C9F8495007AD89C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56725EAA1C9F846E007AD89C /* AppDelegate.swift */,
+				56C4E56E1CA8C4850064E826 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -130,6 +138,7 @@
 		56725EBE1C9F849B007AD89C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56963EE21CA2307D0086E293 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -314,9 +323,12 @@
 				56E8D22C1CA0D7AA0016A39F /* DataService.swift in Sources */,
 				56725EAD1C9F846E007AD89C /* ViewController.swift in Sources */,
 				56725EAB1C9F846E007AD89C /* AppDelegate.swift in Sources */,
+				56963EE11CA22FB20086E293 /* FeedVC.swift in Sources */,
+				56963EE31CA2307D0086E293 /* PostCell.swift in Sources */,
 				56725ECC1C9F8820007AD89C /* Constants.swift in Sources */,
 				56725ECE1C9F8BC4007AD89C /* MaterialButton.swift in Sources */,
 				56725ED01C9F8F47007AD89C /* MaterialField.swift in Sources */,
+				56C4E56F1CA8C4850064E826 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
